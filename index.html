@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bot Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#server-settings">Server Settings</a></li>
+                <li><a href="#bot-settings">Bot Settings</a></li>
+                <li><a href="#logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome, User!</h2>
+            <p>Manage your bot and servers from this dashboard.</p>
+        </section>
+        <section id="server-settings">
+            <h2>Server Settings</h2>
+            <form id="server-settings-form">
+                <label for="server-name">Server Name:</label>
+                <input type="text" id="server-name" name="server-name">
+                <button type="submit">Save Settings</button>
+            </form>
+        </section>
+        <section id="bot-settings">
+            <h2>Bot Settings</h2>
+            <form id="bot-settings-form">
+                <label for="bot-prefix">Bot Prefix:</label>
+                <input type="text" id="bot-prefix" name="bot-prefix">
+                <button type="submit">Update Prefix</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Bot Dashboard. All rights reserved.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
